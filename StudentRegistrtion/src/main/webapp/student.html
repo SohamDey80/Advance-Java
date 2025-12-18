@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="register" method="post">
+
+        Student ID: <input type="text" name="studentId" required><br><br>
+
+        Student Name: <input type="text" name="studentName" required><br><br>
+
+        Email: <input type="email" name="email" required><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        Course:
+        <select name="course" required>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>

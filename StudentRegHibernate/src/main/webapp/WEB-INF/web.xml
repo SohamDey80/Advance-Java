@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee"
+	version="5.0">
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.cdac.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewStudentsServlet</servlet-name>
+		<servlet-class>com.cdac.ViewStudentsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewStudentsServlet</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx">
+<context:component-scan base-package="com.cdac"/>
+<!--  DataSource  -->
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+<property name="url" value="jdbc:mysql://localhost:3306/studentdb"/>
+<property name="username" value="root"/>
+<property name="password" value="Sohamdey#123"/>
+</bean>
+<!--  Transaction Manager  -->
+<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<property name="dataSource" ref="dataSource"/>
+</bean>
+<tx:annotation-driven/>
+</beans>
